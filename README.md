@@ -9,7 +9,7 @@
 
 ## Overview
 
-This repository is based on the old version of the orbit extension repository from isaaclab and provides a template for research on robotic operation tasks. It is independent of isaaclab and allows for customization of the details of operation tasks.
+This repository is based on the old version (orbit) of the orbit extension repository from isaaclab and provides a template for research on robot manipulation tasks. It is independent of isaaclab and allows for customization of the details of manipulation tasks.
 
 
 
