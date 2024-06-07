@@ -28,7 +28,7 @@ This template depends on Isaac Sim and IsaacLab.
 It is recommended to install in a virtual environment. IsaacLab provides a default virtual environment that can be activated directly.
 ```bash
 # Activate conda environment
-conda activate isaacLab
+conda activate isaaclab
 ```
 ### Download
 ```bash
