@@ -1,0 +1,40 @@
+[package]
+
+# Semantic Versioning is used: https://semver.org/
+version = "0.1.0"
+
+# Description
+category = "isaacLab.manipulation"
+readme  = "README.md"
+
+# TODO: Change your package specifications
+# -----------------------------------------------------------------
+title = "Extension Template"
+author = "Qiwei Wu"
+maintainer = "Qiwei Wu/Sony Research & Development Center China"
+maintainer_email = "nathan.wuqw@gmail.com"
+description="Manipulation Extension Template for isaacLab"
+repository = "https://github.com/NathanWu7/isaacLab.manipulation.git"
+keywords = ["extension", "template", "isaacLab"]
+# -----------------------------------------------------------------
+
+[dependencies]
+"omni.isaac.lab" = {}
+"omni.isaac.lab_assets" = {}
+"omni.isaac.lab_tasks" = {}
+# NOTE: Add additional dependencies here
+
+[[python.module]]
+# TODO: Change your package name
+# -----------------------------------------------------------------
+name = "isaacLab.manipulation"
+# -----------------------------------------------------------------
+
+[lab_settings]
+# TODO: Uncomment and list any apt dependencies here.
+#       If none, leave it commented out.
+# apt_deps = ["example_package"]
+# TODO: Uncomment and provide path to a ros_ws
+#       with rosdeps to be installed. If none,
+#       leave it commented out.
+# ros_ws = "path/from/extension_root/to/ros_ws"
