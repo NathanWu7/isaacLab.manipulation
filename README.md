@@ -10,7 +10,7 @@
 ## Overview
 
 This repository is based on the old version (orbit) of the orbit extension repository from isaaclab and provides a template for research on robot manipulation tasks. It is independent of isaaclab and allows for customization of the details of manipulation tasks.
-
+**Keywords:** extension, manipulation, lab
 
 
 
@@ -85,7 +85,7 @@ python3 scripts/rsl_rl/play.py --task Template-Isaac-Reach-Franka-Play-v0 --num_
 python3 scripts/rsl_rl/play.py --task Template-Isaac-Repose-Cube-Allegro-Play-v0 --num_envs 16
 ```
 
-## License
+## Author
 **Author: Qiwei Wu<br />
 Affiliation: Sony Research & Development Center China<br />
 Email: nathan.wuqw@gmail.com**
