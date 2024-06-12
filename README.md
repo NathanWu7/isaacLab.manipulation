@@ -86,7 +86,6 @@ python3 scripts/rsl_rl/play.py --task Template-Isaac-Repose-Cube-Allegro-Play-v0
 
 ## Author
 **Author: Qiwei Wu<br />
-Affiliation: Sony Research & Development Center China<br />
 Email: nathan.wuqw@gmail.com**
 
 
