@@ -5,7 +5,10 @@
 
 from omni.isaac.lab.utils import configclass
 
-import omni.isaac.lab_tasks.manager_based.manipulation.inhand.inhand_env_cfg as inhand_env_cfg
+#import isaacLab.manipulation.tasks.Robot_arm.reach.mdp as mdp
+import isaacLab.manipulation.tasks.Dextrous_hand.inhand.mdp as mdp
+from isaacLab.manipulation.tasks.Dextrous_hand.inhand.inhand_env_cfg import inhand_env_cfg
+#import omni.isaac.lab_tasks.manager_based.manipulation.inhand.inhand_env_cfg as inhand_env_cfg
 
 ##
 # Pre-defined configs
