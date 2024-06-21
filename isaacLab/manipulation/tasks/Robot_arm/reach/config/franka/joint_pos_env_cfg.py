@@ -8,7 +8,9 @@ import math
 from omni.isaac.lab.utils import configclass
 
 import omni.isaac.lab_tasks.manager_based.manipulation.reach.mdp as mdp
-from omni.isaac.lab_tasks.manager_based.manipulation.reach.reach_env_cfg import ReachEnvCfg
+
+from isaacLab.manipulation.tasks.Robot_arm.reach.reach_env_cfg import ReachEnvCfg
+#from omni.isaac.lab_tasks.manager_based.manipulation.reach.reach_env_cfg import ReachEnvCfg
 
 ##
 # Pre-defined configs
