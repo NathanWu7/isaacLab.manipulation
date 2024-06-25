@@ -21,7 +21,7 @@ from omni.isaac.lab.utils import configclass
 from omni.isaac.lab.utils.assets import ISAAC_NUCLEUS_DIR
 from omni.isaac.lab.utils.noise import AdditiveUniformNoiseCfg as Unoise
 
-import omni.isaac.lab_tasks.manager_based.manipulation.reach.mdp as mdp
+import isaacLab.manipulation.tasks.Robot_arm.reach.mdp as mdp
 
 ##
 # Scene definition
