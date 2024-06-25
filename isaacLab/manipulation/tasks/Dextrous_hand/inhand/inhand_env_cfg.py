@@ -23,7 +23,7 @@ from omni.isaac.lab.utils import configclass
 from omni.isaac.lab.utils.assets import ISAAC_NUCLEUS_DIR
 from omni.isaac.lab.utils.noise import AdditiveGaussianNoiseCfg as Gnoise
 
-import omni.isaac.lab_tasks.manager_based.manipulation.inhand.mdp as mdp
+import isaacLab.manipulation.tasks.Robot_arm.inhand.mdp as mdp
 
 ##
 # Scene definition
