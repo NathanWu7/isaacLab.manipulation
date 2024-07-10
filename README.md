@@ -36,50 +36,85 @@ cd isaacLab.manipulation
 python -m pip install -e .
 ```
 
-
-
+### Convert urdf to usd
+```bash
+# urdf files in isaacLab.manipulation/isaacLab/manipulation/assets/urdf 
+# usd files in isaacLab.manipulation/isaacLab/manipulation/assets/usd
+python3 scripts/tools/convert_urdf.py urdf/your_urdf.urdf usd/your_usd.usd
+```
+### About isaac nucleus
+If you dont want to use the assets in isaac nucleus, please comment the following code and replace it with your own assets path.
+```bash
+from omni.isaac.lab.utils.assets import ISAAC_NUCLEUS_DIR
+# from isaacLab.manipulation.assets.config import your_robot
+```
 ### RL Algorithm
 
 Install [RSL_RL](https://github.com/leggedrobotics/rsl_rl) outside of the isaacLab repository, e.g. `home/code/rsl_rl`.
 
 ```bash
+cd isaacLab.manipulation/isaacLab/manipulation/algorithms
 git clone https://github.com/leggedrobotics/rsl_rl.git
 cd rsl_rl
 python -m pip install -e .
 ```
-
+You can design your own RL Algorithm
 
 ## Usage
-
-
 ```bash
 #root of the package
 cd isaacLab.manipulation
 ```
-### Train a policy.
-1.RobotArm
+### 1. Convert your urdf to usd
+```bash
+python3 scripts/tools/convert_urdf.py urdf/your_urdf.urdf usd/your_usd.usd
+```
+### 2. Set up your robot or objects
+```bash
+cd isaacLab.manipulation/isaacLab/manipulation/assets/config
+touch your_robot.py
+# kinova_gipper.py is an example. You can copy the file and change robot_usd = "kinova_robotiq.usd" to your own usd and apply some changes in ArticulationCfg 
+```
+And add env configs for each tasks
+```bash
+mkdir isaacLab.manipulation/isaacLab/manipulation/tasks/Robot_arm/your_tasks/config/your_robot_env
+# kinova_gripper in reach task is an example
+```
+### 3. RL settings
+You can modify *actions/rewards/observations/events/terminations* in the directory "mdp" to set up your own RL settings and you can manage them uniformly in "env_cfg" outside "mdp". These files modify the functions of the original isaaclab through rewritting and overloading.
+
+
+### 4. Train a policy.
+4.1 RobotArm
+```bash
+python3 scripts/rsl_rl/train.py --task Template-Isaac-Reach-Kinova-v0--num_envs 4096 --headless
+```
 ```bash
 python3 scripts/rsl_rl/train.py --task Template-Isaac-Reach-Franka-v0 --num_envs 4096 --headless
 ```
 ```bash
 python3 scripts/rsl_rl/train.py --task Template-Isaac-Reach-UR10-v0 --num_envs 4096 --headless
 ```
-2.Dextrous Hand
+4.2 Dextrous Hand
 ```bash
 python3 scripts/rsl_rl/train.py --task Template-Isaac-Repose-Cube-Allegro-v0 --num_envs 4096 --headless
 ```
 
 
-### Play the trained policy.
+### 5. Play the trained policy.
 
-1.RobotArm
+5.1 RobotArm
 ```bash
+python3 scripts/rsl_rl/play.py --task Template-Isaac-Reach-Kinova-Play-v0--num_envs 16
+```
+```bash
+# You can also use train.py if you dont need to add some additional configs.
 python3 scripts/rsl_rl/play.py --task Template-Isaac-Reach-Franka-Play-v0 --num_envs 16
 ```
 ```bash
 python3 scripts/rsl_rl/play.py --task Template-Isaac-Reach-Franka-Play-v0 --num_envs 16
 ```
-2.Dextrous Hand
+5.2 Dextrous Hand
 ```bash
 python3 scripts/rsl_rl/play.py --task Template-Isaac-Repose-Cube-Allegro-Play-v0 --num_envs 16
 ```

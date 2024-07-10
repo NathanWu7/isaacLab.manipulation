@@ -36,7 +36,7 @@ import os
 import torch
 from datetime import datetime
 
-from rsl_rl.runners import OnPolicyRunner
+from isaacLab.manipulation.algorithms.rsl_rl.rsl_rl.runners import OnPolicyRunner
 
 import omni.isaac.lab_tasks  # noqa: F401
 from omni.isaac.lab.envs import ManagerBasedRLEnvCfg

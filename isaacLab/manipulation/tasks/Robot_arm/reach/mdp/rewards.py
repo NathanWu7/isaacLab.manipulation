@@ -10,11 +10,45 @@ from typing import TYPE_CHECKING
 
 from omni.isaac.lab.assets import RigidObject
 from omni.isaac.lab.managers import SceneEntityCfg
+from omni.isaac.lab.sensors import FrameTransformer
 from omni.isaac.lab.utils.math import combine_frame_transforms, quat_error_magnitude, quat_mul
 
 if TYPE_CHECKING:
     from omni.isaac.lab.envs import ManagerBasedRLEnv
 
+
+def object_is_lifted(
+    env: ManagerBasedRLEnv, minimal_height: float, object_cfg: SceneEntityCfg = SceneEntityCfg("object")
+) -> torch.Tensor:
+    """Reward the agent for lifting the object above the minimal height."""
+    object: RigidObject = env.scene[object_cfg.name]
+    return torch.where(object.data.root_pos_w[:, 2] > minimal_height, 1.0, 0.0)
+
+
+def object_ee_distance(
+    env: ManagerBasedRLEnv,
+    std: float,
+    object_cfg: SceneEntityCfg = SceneEntityCfg("object"),
+    ee_frame_cfg: SceneEntityCfg = SceneEntityCfg("ee_frame"),
+) -> torch.Tensor:
+    """Reward the agent for reaching the object using tanh-kernel."""
+    # extract the used quantities (to enable type-hinting)
+    object: RigidObject = env.scene[object_cfg.name]
+    ee_frame: FrameTransformer = env.scene[ee_frame_cfg.name]
+    ee_fingertips_w = ee_frame.data.target_pos_w[..., 1:, :]
+    
+    ee_pos = ee_frame.data.target_pos_w[..., 0, :]
+    lfinger_pos = ee_fingertips_w[..., 0, :]
+    rfinger_pos = ee_fingertips_w[..., 1, :]
+    cube_pos_w = object.data.root_pos_w
+
+    
+    lf_dist = torch.norm(lfinger_pos - cube_pos_w, dim=1)
+    rf_dist = torch.norm(rfinger_pos - cube_pos_w, dim=1)
+    ee_dist = torch.norm(ee_pos - cube_pos_w, dim=1)
+
+    return 1 - torch.tanh( ((lf_dist + rf_dist + ee_dist) / 3) / std) 
+        
 
 def position_command_error(env: ManagerBasedRLEnv, command_name: str, asset_cfg: SceneEntityCfg) -> torch.Tensor:
     """Penalize tracking of the position error using L2-norm.

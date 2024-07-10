@@ -32,7 +32,7 @@ import gymnasium as gym
 import os
 import torch
 
-from rsl_rl.runners import OnPolicyRunner
+from isaacLab.manipulation.algorithms.rsl_rl.rsl_rl.runners import OnPolicyRunner
 
 import omni.isaac.lab_tasks  # noqa: F401
 from omni.isaac.lab_tasks.utils import get_checkpoint_path, parse_env_cfg
