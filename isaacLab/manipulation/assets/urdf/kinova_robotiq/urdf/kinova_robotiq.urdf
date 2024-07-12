@@ -20,7 +20,7 @@
     <visual>
       <origin rpy="1.57 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/visual/base_link.STL"/>
+        <mesh filename="package://kinova_robotiq/meshes/visual/base_link.STL"/>
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1"/>
@@ -29,7 +29,7 @@
     <collision>
       <origin rpy="1.57 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/collision/base_link.STL"/>
+        <mesh filename="package://kinova_robotiq/meshes/collision/base_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -49,7 +49,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/visual/shoulder_link.STL"/>
+        <mesh filename="package://kinova_robotiq/meshes/visual/shoulder_link.STL"/>
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1"/>
@@ -58,7 +58,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/collision/shoulder_link.STL"/>
+        <mesh filename="package://kinova_robotiq/meshes/collision/shoulder_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -78,7 +78,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/visual/half_arm_1_link.STL"/>
+        <mesh filename="package://kinova_robotiq/meshes/visual/half_arm_1_link.STL"/>
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1"/>
@@ -87,7 +87,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/collision/half_arm_1_link.STL"/>
+        <mesh filename="package://kinova_robotiq/meshes/collision/half_arm_1_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -107,7 +107,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/visual/half_arm_2_link.STL"/>
+        <mesh filename="package://kinova_robotiq/meshes/visual/half_arm_2_link.STL"/>
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1"/>
@@ -116,7 +116,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/collision/half_arm_2_link.STL"/>
+        <mesh filename="package://kinova_robotiq/meshes/collision/half_arm_2_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -136,7 +136,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/visual/forearm_link.STL"/>
+        <mesh filename="package://kinova_robotiq/meshes/visual/forearm_link.STL"/>
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1"/>
@@ -145,7 +145,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/collision/forearm_link.STL"/>
+        <mesh filename="package://kinova_robotiq/meshes/collision/forearm_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -165,7 +165,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/visual/spherical_wrist_1_link.STL"/>
+        <mesh filename="package://kinova_robotiq/meshes/visual/spherical_wrist_1_link.STL"/>
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1"/>
@@ -174,7 +174,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/collision/spherical_wrist_1_link.STL"/>
+        <mesh filename="package://kinova_robotiq/meshes/collision/spherical_wrist_1_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -194,7 +194,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/visual/spherical_wrist_2_link.STL"/>
+        <mesh filename="package://kinova_robotiq/meshes/visual/spherical_wrist_2_link.STL"/>
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1"/>
@@ -203,7 +203,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/collision/spherical_wrist_2_link.STL"/>
+        <mesh filename="package://kinova_robotiq/meshes/collision/spherical_wrist_2_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -223,7 +223,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/visual/bracelet_with_vision_link.STL"/>
+        <mesh filename="package://kinova_robotiq/meshes/visual/bracelet_with_vision_link.STL"/>
       </geometry>
       <material name="">
         <color rgba="0.75294 0.75294 0.75294 1"/>
@@ -232,7 +232,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/collision/bracelet_with_vision_link.STL"/>
+        <mesh filename="package://kinova_robotiq/meshes/collision/bracelet_with_vision_link.STL"/>
       </geometry>
     </collision>
   </link>
@@ -294,8 +294,8 @@
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <!-- The DAE file doesn't show well in Gazebo so we're using the STL instead -->
-        <!-- <mesh filename="package://kinova_wheel_urdf/meshes/visual/robotiq_arg2f_85_base_link.dae" scale="0.001 0.001 0.001"/> -->
-        <mesh filename="package://kinova_wheel_urdf/meshes/collision/robotiq_arg2f_base_link.stl"/>
+        <!-- <mesh filename="package://kinova_robotiq/meshes/visual/robotiq_arg2f_85_base_link.dae" scale="0.001 0.001 0.001"/> -->
+        <mesh filename="package://kinova_robotiq/meshes/collision/robotiq_arg2f_base_link.stl"/>
       </geometry>
       <material name="">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -304,7 +304,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/collision/robotiq_arg2f_base_link.stl"/>
+        <mesh filename="package://kinova_robotiq/meshes/collision/robotiq_arg2f_base_link.stl"/>
       </geometry>
     </collision>
   </link>
@@ -320,7 +320,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/visual/robotiq_arg2f_85_outer_knuckle.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://kinova_robotiq/meshes/visual/robotiq_arg2f_85_outer_knuckle.dae" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
@@ -329,7 +329,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/collision/robotiq_arg2f_85_outer_knuckle.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://kinova_robotiq/meshes/collision/robotiq_arg2f_85_outer_knuckle.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -342,7 +342,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/visual/robotiq_arg2f_85_outer_finger.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://kinova_robotiq/meshes/visual/robotiq_arg2f_85_outer_finger.dae" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -351,7 +351,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/collision/robotiq_arg2f_85_outer_finger.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://kinova_robotiq/meshes/collision/robotiq_arg2f_85_outer_finger.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -364,7 +364,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/visual/robotiq_arg2f_85_inner_finger.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://kinova_robotiq/meshes/visual/robotiq_arg2f_85_inner_finger.dae" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -373,7 +373,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/collision/robotiq_arg2f_85_inner_finger.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://kinova_robotiq/meshes/collision/robotiq_arg2f_85_inner_finger.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -406,7 +406,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/visual/robotiq_arg2f_85_inner_knuckle.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://kinova_robotiq/meshes/visual/robotiq_arg2f_85_inner_knuckle.dae" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -415,7 +415,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/collision/robotiq_arg2f_85_inner_knuckle.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://kinova_robotiq/meshes/collision/robotiq_arg2f_85_inner_knuckle.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -428,7 +428,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/visual/robotiq_arg2f_85_outer_knuckle.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://kinova_robotiq/meshes/visual/robotiq_arg2f_85_outer_knuckle.dae" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
@@ -437,7 +437,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/collision/robotiq_arg2f_85_outer_knuckle.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://kinova_robotiq/meshes/collision/robotiq_arg2f_85_outer_knuckle.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -450,7 +450,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/visual/robotiq_arg2f_85_outer_finger.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://kinova_robotiq/meshes/visual/robotiq_arg2f_85_outer_finger.dae" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -459,7 +459,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/collision/robotiq_arg2f_85_outer_finger.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://kinova_robotiq/meshes/collision/robotiq_arg2f_85_outer_finger.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -472,7 +472,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/visual/robotiq_arg2f_85_inner_finger.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://kinova_robotiq/meshes/visual/robotiq_arg2f_85_inner_finger.dae" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -481,7 +481,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/collision/robotiq_arg2f_85_inner_finger.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://kinova_robotiq/meshes/collision/robotiq_arg2f_85_inner_finger.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -514,7 +514,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/visual/robotiq_arg2f_85_inner_knuckle.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://kinova_robotiq/meshes/visual/robotiq_arg2f_85_inner_knuckle.dae" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="">
         <color rgba="0.1 0.1 0.1 1"/>
@@ -523,7 +523,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://kinova_wheel_urdf/meshes/collision/robotiq_arg2f_85_inner_knuckle.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://kinova_robotiq/meshes/collision/robotiq_arg2f_85_inner_knuckle.dae" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
