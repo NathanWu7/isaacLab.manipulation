@@ -37,7 +37,7 @@
   <joint name="arm_wheel" type="fixed">
     <parent link="base_link"/>
     <child link="arm_base_link"/>
-    <origin rpy="-1.57 0.0 0.0" xyz="0.0 0.0 0.0"/>
+    <origin rpy="-1.57 0.0 3.14" xyz="0.0 0.0 0.0"/>
   </joint>
 
   <link name="shoulder_link">
