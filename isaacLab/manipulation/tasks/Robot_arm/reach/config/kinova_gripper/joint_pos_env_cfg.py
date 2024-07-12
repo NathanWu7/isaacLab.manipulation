@@ -31,6 +31,7 @@ class KinovaReachEnvCfg(ReachEnvCfg):
 
         # switch robot to ur10
         self.scene.robot = KINOVA_ROBOTIQ.replace(prim_path="{ENV_REGEX_NS}/Robot")
+        self.scene.replicate_physics=False
         # override events
         self.events.reset_robot_joints.params["position_range"] = (0.75, 1.25)
         # override rewards
@@ -38,9 +39,10 @@ class KinovaReachEnvCfg(ReachEnvCfg):
         self.rewards.end_effector_position_tracking_fine_grained.params["asset_cfg"].body_names = ["end_effector_link"]
         self.rewards.end_effector_orientation_tracking.params["asset_cfg"].body_names = ["end_effector_link"]
         # override actions
-        self.actions.arm_action = mdp.JointPositionActionCfg(
-            asset_name="robot", joint_names=[".*"], scale=0.5, use_default_offset=True
+        self.actions.arm_action = mdp.RelativeJointPositionActionCfg(
+            asset_name="robot", joint_names=["joint_[1-7]"], scale=0.04
         )
+
         # override command generator body
         # end-effector is along x-direction
         self.commands.ee_pose.body_name = "end_effector_link"
@@ -55,5 +57,6 @@ class KinovaReachEnvCfg_PLAY(KinovaReachEnvCfg):
         # make a smaller scene for play
         self.scene.num_envs = 50
         self.scene.env_spacing = 2.5
+        self.scene.replicate_physics=False
         # disable randomization for play
         self.observations.policy.enable_corruption = False
