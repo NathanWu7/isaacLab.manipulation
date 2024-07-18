@@ -57,6 +57,10 @@ cd isaacLab.manipulation/isaacLab/manipulation/algorithms
 git clone https://github.com/leggedrobotics/rsl_rl.git
 cd rsl_rl
 python -m pip install -e .
+
+## refresh index
+cd isaacLab.manipulation
+python -m pip install -e .
 ```
 You can design your own RL Algorithm
 
