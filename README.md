@@ -87,6 +87,18 @@ mkdir isaacLab.manipulation/isaacLab/manipulation/tasks/Robot_arm/your_tasks/con
 ### 3. RL settings
 You can modify *actions/rewards/observations/events/terminations* in the directory "mdp" to set up your own RL settings and you can manage them uniformly in "env_cfg" outside "mdp". These files modify the functions of the original isaaclab through rewritting and overloading.
 
+### IMPORTANT ISSUES
+1.  'RigidBodyView' object has no attribute 'get_accelerations.
+<br>Solution: Update Isaac Sim to version 4.1.0.
+2.  argument --cpu: conflicting option string: --cpu
+<br>Solution: Annotate the following code in *play.py* and *train.py*:
+```python
+parser.add_argument("--cpu", action="store_true", default=False, help="Use CPU pipeline.")
+```
+<br>Then remove "use_gpu = not args_cli.cpu" in the following code:
+```python
+parse_env_cfg(args_cli.task, use_gpu=not args_cli.cpu, num_envs=args_cli.num_envs)
+```
 
 ### 4. Train a policy.
 4.1 RobotArm
