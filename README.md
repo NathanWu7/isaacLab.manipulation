@@ -53,6 +53,7 @@ from omni.isaac.lab.utils.assets import ISAAC_NUCLEUS_DIR
 Install [RSL_RL](https://github.com/leggedrobotics/rsl_rl) outside of the isaacLab repository, e.g. `home/code/rsl_rl`.
 
 ```bash
+mkdir isaacLab.manipulation/isaacLab/manipulation/algorithms
 cd isaacLab.manipulation/isaacLab/manipulation/algorithms
 git clone https://github.com/leggedrobotics/rsl_rl.git
 cd rsl_rl
@@ -62,7 +63,7 @@ python -m pip install -e .
 cd isaacLab.manipulation
 python -m pip install -e .
 ```
-You can design your own RL Algorithm
+You can design your own RL Algorithm by editing "modules" and "algorithms" in RSL-RL
 
 ## Usage
 ```bash
