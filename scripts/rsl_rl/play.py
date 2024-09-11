@@ -3,7 +3,7 @@
 """Launch Isaac Sim Simulator first."""
 
 import argparse
-
+from omni.isaac.lab import __version__ as omni_isaac_lab_version
 from omni.isaac.lab.app import AppLauncher
 
 # local imports
@@ -11,7 +11,8 @@ import cli_args  # isort: skip
 
 # add argparse arguments
 parser = argparse.ArgumentParser(description="Train an RL agent with RSL-RL.")
-parser.add_argument("--cpu", action="store_true", default=False, help="Use CPU pipeline.")
+if omni_isaac_lab_version < "0.21.0":
+    parser.add_argument("--cpu", action="store_true", default=False, help="Use CPU pipeline.")
 parser.add_argument("--num_envs", type=int, default=None, help="Number of environments to simulate.")
 parser.add_argument("--task", type=str, default=None, help="Name of the task.")
 parser.add_argument("--seed", type=int, default=None, help="Seed used for the environment")
@@ -49,7 +50,10 @@ import isaacLab.manipulation.tasks  # noqa: F401  TODO: import lab.<your_extensi
 def main():
     """Play with RSL-RL agent."""
     # parse configuration
-    env_cfg = parse_env_cfg(args_cli.task, use_gpu=not args_cli.cpu, num_envs=args_cli.num_envs)
+    if omni_isaac_lab_version < "0.21.0":
+        env_cfg = parse_env_cfg(args_cli.task, use_gpu=not args_cli.cpu, num_envs=args_cli.num_envs)
+    else:
+        env_cfg = parse_env_cfg(args_cli.task, num_envs=args_cli.num_envs)
     agent_cfg: RslRlOnPolicyRunnerCfg = cli_args.parse_rsl_rl_cfg(args_cli.task, args_cli)
 
     # create isaac environment

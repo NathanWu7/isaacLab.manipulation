@@ -104,7 +104,7 @@ parse_env_cfg(args_cli.task, use_gpu=not args_cli.cpu, num_envs=args_cli.num_env
 ### 4. Train a policy.
 4.1 RobotArm
 ```bash
-python3 scripts/rsl_rl/train.py --task Template-Isaac-Reach-Kinova-v0--num_envs 4096 --headless
+python3 scripts/rsl_rl/train.py --task Template-Isaac-Reach-Kinova-v0 --num_envs 4096 --headless
 ```
 ```bash
 python3 scripts/rsl_rl/train.py --task Template-Isaac-Reach-Franka-v0 --num_envs 4096 --headless
