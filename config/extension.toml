@@ -19,9 +19,9 @@ keywords = ["extension", "template", "isaacLab"]
 # -----------------------------------------------------------------
 
 [dependencies]
-"omni.isaac.lab" = {}
-"omni.isaac.lab_assets" = {}
-"omni.isaac.lab_tasks" = {}
+"isaaclab" = {}
+"isaaclab_assets" = {}
+"isaaclab_tasks" = {}
 # NOTE: Add additional dependencies here
 
 [[python.module]]

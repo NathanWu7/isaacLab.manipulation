@@ -57,6 +57,8 @@ mkdir isaacLab.manipulation/isaacLab/manipulation/algorithms
 cd isaacLab.manipulation/isaacLab/manipulation/algorithms
 git clone https://github.com/leggedrobotics/rsl_rl.git
 cd rsl_rl
+# IMPORTANT: Use a specific version of rsl_rl that is compatible with this project
+git checkout 73fd7c6  # v2.0.1 release
 python -m pip install -e .
 
 ## refresh index

@@ -87,8 +87,8 @@
     // Python extra paths
     // Note: this is filled up when "./isaaclab.sh -i" is run
     "python.analysis.extraPaths": [
-        "~/workspace/dev/IsaacLab/source/extensions/omni.isaac.lab_assets",
-        "~/workspace/dev/IsaacLab/source/extensions/omni.isaac.lab_tasks",
-        "~/workspace/dev/IsaacLab/source/extensions/omni.isaac.lab"
+        "~/workspace/dev/IsaacLab/source/extensions/isaaclab_assets",
+        "~/workspace/dev/IsaacLab/source/extensions/isaaclab_tasks",
+        "~/workspace/dev/IsaacLab/source/extensions/isaaclab"
     ]
 }
