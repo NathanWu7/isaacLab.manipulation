@@ -45,7 +45,7 @@ python3 scripts/tools/convert_urdf.py urdf/your_urdf.urdf usd/your_usd.usd
 ### About isaac nucleus
 If you dont want to use the assets in isaac nucleus, please comment the following code and replace it with your own assets path.
 ```bash
-from omni.isaac.lab.utils.assets import ISAAC_NUCLEUS_DIR
+from isaaclab.utils.assets import ISAAC_NUCLEUS_DIR
 # from isaacLab.manipulation.assets.config import your_robot
 ```
 ### RL Algorithm
