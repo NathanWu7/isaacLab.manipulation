@@ -17,7 +17,7 @@ __version__ = LAB_TASKS_METADATA["package"]["version"]
 # Register Gym environments.
 ##
 
-from omni.isaac.lab_tasks.utils import import_packages
+from isaaclab_tasks.utils import import_packages
 
 # The blacklist is used to prevent importing configs from sub-packages
 _BLACKLIST_PKGS = ["utils"]

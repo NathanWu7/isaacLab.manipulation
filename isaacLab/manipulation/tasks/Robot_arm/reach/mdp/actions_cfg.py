@@ -4,9 +4,9 @@
 # SPDX-License-Identifier: BSD-3-Clause
 from dataclasses import MISSING
 
-from omni.isaac.lab.controllers import DifferentialIKControllerCfg
-from omni.isaac.lab.managers.action_manager import ActionTerm, ActionTermCfg
-from omni.isaac.lab.utils import configclass
+from isaaclab.controllers import DifferentialIKControllerCfg
+from isaaclab.managers.action_manager import ActionTerm, ActionTermCfg
+from isaaclab.utils import configclass
 
 from . import actions
 

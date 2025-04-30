@@ -3,8 +3,8 @@
 """Launch Isaac Sim Simulator first."""
 
 import argparse
-from omni.isaac.lab import __version__ as omni_isaac_lab_version
-from omni.isaac.lab.app import AppLauncher
+from isaaclab import __version__ as omni_isaac_lab_version
+from isaaclab.app import AppLauncher
 
 # local imports
 import cli_args  # isort: skip
@@ -35,9 +35,9 @@ import torch
 
 from isaacLab.manipulation.algorithms.rsl_rl.rsl_rl.runners import OnPolicyRunner
 
-import omni.isaac.lab_tasks  # noqa: F401
-from omni.isaac.lab_tasks.utils import get_checkpoint_path, parse_env_cfg
-from omni.isaac.lab_tasks.utils.wrappers.rsl_rl import (
+import isaaclab_tasks  # noqa: F401
+from isaaclab_tasks.utils import get_checkpoint_path, parse_env_cfg
+from isaaclab_rl.rsl_rl import (
     RslRlOnPolicyRunnerCfg,
     RslRlVecEnvWrapper,
     export_policy_as_onnx,

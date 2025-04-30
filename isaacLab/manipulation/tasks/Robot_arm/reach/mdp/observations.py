@@ -8,13 +8,13 @@ from __future__ import annotations
 import torch
 from typing import TYPE_CHECKING
 
-from omni.isaac.lab.assets import Articulation, RigidObject
-from omni.isaac.lab.managers import SceneEntityCfg
-from omni.isaac.lab.utils.math import subtract_frame_transforms
-from omni.isaac.lab.sensors import FrameTransformer
+from isaaclab.assets import Articulation, RigidObject
+from isaaclab.managers import SceneEntityCfg
+from isaaclab.utils.math import subtract_frame_transforms
+from isaaclab.sensors import FrameTransformer
 
 if TYPE_CHECKING:
-    from omni.isaac.lab.envs import ManagerBasedEnv, ManagerBasedRLEnv
+    from isaaclab.envs import ManagerBasedEnv, ManagerBasedRLEnv
 
 
 def object_position_in_robot_root_frame(
