@@ -7,17 +7,17 @@ from __future__ import annotations
 
 import torch
 from collections.abc import Sequence
-import omni.isaac.lab.utils.math as math_utils
+import isaaclab.utils.math as math_utils
 
 import carb
 
-import omni.isaac.lab.utils.string as string_utils
-from omni.isaac.lab.assets.articulation import Articulation
-from omni.isaac.lab.managers.action_manager import ActionTerm
-from omni.isaac.lab.managers import SceneEntityCfg
+import isaaclab.utils.string as string_utils
+from isaaclab.assets.articulation import Articulation
+from isaaclab.managers.action_manager import ActionTerm
+from isaaclab.managers import SceneEntityCfg
 
 
-from omni.isaac.lab.envs import ManagerBasedEnv
+from isaaclab.envs import ManagerBasedEnv
 
 from . import actions_cfg
 

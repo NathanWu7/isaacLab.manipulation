@@ -14,9 +14,9 @@ The following configuration parameters are available:
 Reference: https://github.com/Kinovarobotics/kinova-ros
 """
 
-import omni.isaac.lab.sim as sim_utils
-from omni.isaac.lab.actuators import ImplicitActuatorCfg
-from omni.isaac.lab.assets.articulation import ArticulationCfg
+import isaaclab.sim as sim_utils
+from isaaclab.actuators import ImplicitActuatorCfg
+from isaaclab.assets.articulation import ArticulationCfg
 import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))

@@ -3,17 +3,17 @@
 #
 # SPDX-License-Identifier: BSD-3-Clause
 
-from omni.isaac.lab.utils import configclass
+from isaaclab.utils import configclass
 
 #import isaacLab.manipulation.tasks.Robot_arm.reach.mdp as mdp
 import isaacLab.manipulation.tasks.Dextrous_hand.inhand.mdp as mdp
 import isaacLab.manipulation.tasks.Dextrous_hand.inhand.inhand_env_cfg as inhand_env_cfg
-#import omni.isaac.lab_tasks.manager_based.manipulation.inhand.inhand_env_cfg as inhand_env_cfg
+#import isaaclab_tasks.manager_based.manipulation.inhand.inhand_env_cfg as inhand_env_cfg
 
 ##
 # Pre-defined configs
 ##
-from omni.isaac.lab_assets import ALLEGRO_HAND_CFG  # isort: skip
+from isaaclab_assets import ALLEGRO_HAND_CFG  # isort: skip
 
 
 @configclass
