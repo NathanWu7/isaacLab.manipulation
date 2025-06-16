@@ -162,3 +162,5 @@ cython_debug/
 #.idea/
 
 ./isaacLab/manipulation/algorithms/rsl_rl/
+./outputs/
+./logs/
